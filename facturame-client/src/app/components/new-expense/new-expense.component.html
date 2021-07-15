@@ -1,0 +1,57 @@
+<form [formGroup]="expenseForm" (ngSubmit)="send()"  >
+      
+      <div class="form-group mb-3">
+        <label for="issuer_name">Issuer Name</label>
+        <input type="text" class="form-control" 
+                  id="issuer_name" aria-describedby="emailHelp" 
+                  placeholder="Issuer name"
+                  formControlName="issuer_name"
+                  >
+      </div>
+      
+      <div class="form-group mb-3">
+        <label for="date_issued">Date Issued</label>
+        <input type="text" class="form-control" 
+                id="date_issued" placeholder="Date Issued"
+                formControlName="date_issued"
+                >
+      </div>
+      
+      <div class="form-group mb-3">
+            <label for="issuer_rfc">Issuer RFC</label>
+            <input type="text" class="form-control" 
+                   id="issuer_rfc" placeholder="Issuer RFC"
+                   formControlName="issuer_rfc"
+                   >
+       </div>
+
+       <div class="form-group mb-3">
+            <label for="cfdi_xml">CFDI XML</label>
+            <input type="text" class="form-control" 
+                   id="cfdi_xml" placeholder="CFDI XML"
+                   formControlName="cfdi_xml"
+                   >
+       </div> 
+       
+       <div class="form-group mb-3">
+            <label for="total_amount">Total Amount</label>
+            <input type="text" class="form-control"
+                   id="total_amount" placeholder="Total Amount"
+                   formControlName="total_amount"
+                   >
+       </div> 
+
+
+       <div class="form-group mb-3">
+            <label for="user_id">User</label>
+            <input type="text" class="form-control"
+                   id="user_id" placeholder="User ID"
+                   formControlName="user_id"
+                   >
+       </div> 
+
+       <!-- {{ expenseForm | json }} -->
+      
+       <button type="submit" class="btn btn-primary" [disabled]="!expenseForm.valid">Submit</button>
+
+    </form>
