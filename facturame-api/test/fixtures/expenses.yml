@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  issuer_name: MyString
+  date_issued: 2021-07-13
+  issuer_rfc: MyString
+  cfdi_xml: MyString
+  total_amount: 1.5
+  user: one
+
+two:
+  issuer_name: MyString
+  date_issued: 2021-07-13
+  issuer_rfc: MyString
+  cfdi_xml: MyString
+  total_amount: 1.5
+  user: two
