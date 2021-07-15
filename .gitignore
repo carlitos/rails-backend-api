@@ -5,11 +5,61 @@
 .env
 
 # Facturame-client
+facturame-client/node_modules
 
+facturame-client/.sass-cache
+facturame-client/connect.lock
+facturame-client/coverage
+facturame-client/libpeerconnection.log
+facturame-client/npm-debug.log
+facturame-client/yarn-error.log
+facturame-client/testem.log
+facturame-client/typings
+facturame-client/dist
+facturame-client/tmp
+facturame-client/out-tsc
 
+# Only exists if Bazel was run
+facturame-client/bazel-out
+
+facturame-client/chrome-profiler-events*.json
+
+# Facturame-api
+facturame-api/.bundle
+facturame-api/db/*.sqlite3
+facturame-api/db/*.sqlite3-*
+
+facturame-api/log/*
+facturame-api/tmp/*
+facturame-api/!/log/.keep
+facturame-api/!/tmp/.keep
+
+facturame-api//tmp/pids/*
+facturame-api/!/tmp/pids/
+facturame-api/!/tmp/pids/.keep
+
+facturame-api//storage/*
+facturame-api/!/storage/.keep
+facturame-api/.byebug_history
+
+facturame-api/config/master.key
 
 # Misc
 .DS_Store
 .idea
 
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
