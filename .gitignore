@@ -1,0 +1,11 @@
+# Docker volumes
+.docker/volumes
+
+# Environment variables
+.env
+
+# Misc
+.DS_Store
+.idea
+
+
