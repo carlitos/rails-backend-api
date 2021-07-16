@@ -78,6 +78,50 @@ docker-compose exec web rake db:seed
 
 ### Endpoints of the app
 
-List all the users
+#### Get the all the users
+
+``` GET ```
+Returns a json list with all the users of the app 
+
+```http://localhost:3000/users ```
+
+#### Get the list of expenses order by issued date
+
+``` GET ```
+```http://localhost:3000/expenses ```
+Return the list of the expenses
+
+
+#### Create a new expense
+
+``` POST ```
+```http://localhost:3000/expenses ```
+```json
+{
+    "expense": {
+        "issuer_name": "Carlos Moises",
+        "date_issued": "2021/07/12",
+        "issuer_rfc": "CACJ850728PXA",
+        "cfdi_xml": "",
+        "total_amount": 1500.50,
+        "user_id": 1
+    }
+    
+}
+```
+
+## Front-end 
+
+The front-end app its a project build in Angular version 12.
+
+The project is in the folder ``` facturame-client ```
+
+For the setup of the angular you need to run the following steps:
+
+1. Inside of the folder:
+
+``` yarn install ``` or ``` npm install ``` 
+
+2. Run ```ng serve``` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 
