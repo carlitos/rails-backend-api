@@ -6,4 +6,9 @@ class UserSerializer < ActiveModel::Serializer
     "#{object.name} #{object.last_name}"
   end
 
+  def token
+    Auth::JsonWebToken.encode(object.to_token)
+  end
+  
+
 end
