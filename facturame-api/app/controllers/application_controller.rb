@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::API
-  # include Auth::Authenticate
+  include Auth::Authenticate
 end
