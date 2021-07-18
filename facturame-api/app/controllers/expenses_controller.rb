@@ -1,7 +1,7 @@
 class ExpensesController < ApplicationController
 
   def index
-    render json: Expense.all, each_serializer: ExpenseSerializer, root: false
+    render json: Expense.ordered_by_date.all, each_serializer: ExpenseSerializer, root: false
   end
 
   def new
