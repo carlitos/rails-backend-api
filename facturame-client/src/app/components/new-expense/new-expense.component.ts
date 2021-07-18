@@ -36,28 +36,9 @@ export class NewExpenseComponent implements OnInit {
 
   send( ) {
 
-    // console.log( this.expenseForm.value );
-
-
-    // console.log( 'Forma: ', form.value );
-
-    // if ( form.invalid) {
-    //   console.log('Formulario no valido');
-    // }
-
-    //  let peticion: Promise<any>;
-
+ 
      this._facturame_websservice.addNew( this.expenseForm.value ).subscribe( expense => console.log(expense) );
-
-    //  peticion.then( response => {
-    //    console.log( 'promise', response );
-    //  });
-
-    //  this._facturame_websservice
-    //   .createExpense( this.expenseForm.value)
-    //   .subscribe(hero => this.heroes.push(hero));
-    this.expenseForm.reset();
-
+     this.expenseForm.reset();
     //  this.router.navigateByUrl('/');
 
   }
